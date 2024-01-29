@@ -7,7 +7,7 @@ node_name="" # Set your node name here. Used in the webhook incident message
 average_period_minutes=60 # Set your averaging period here (in minutes)
 
 # Data file location
-data_file="/tmp/final_cpu_usage_data.txt" # Specify the path to store data. You must create full path and the .txt file.
+data_file="/var/tmp/final_cpu_usage_data.txt" # Specify the path to store data. You must create full path and the .txt file.
 
 # Function to send a webhook
 send_webhook() {
