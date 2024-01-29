@@ -2,8 +2,6 @@
 
 This CPU Monitoring Script is a practical tool designed to monitor and alert about the CPU usage abuse for virtual machines on Virtfusion **Debian** hypervisors. It uses Virsh to collect data and integrate with an SRE management platform like Squadcast to send notifications via outgoing webhooks.
 
-![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
-
 ***
 
 ## Table of Contents
