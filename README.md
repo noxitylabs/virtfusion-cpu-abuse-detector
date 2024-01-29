@@ -27,7 +27,7 @@ To use this script:
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 * * * * * root /usr/local/bin/virtfusion_helpers/abuse-detector.sh >/dev/null 2>&1
 ```
-5. Adjust the threshold values and notification endpoints as per your requirements at the beggining of the PHP file. 
+5. Adjust the threshold values, notification endpoints and other "Editable fields" as per your requirements at the beggining of the script. 
 6. Adjust the SRE management platform's deduplication rules to avoid duplicate notifications.
 7. Adjust the webhook payload to your liking. Currently it's formatted for Squadcast's incoming webhook format.
 
@@ -65,6 +65,6 @@ Contributions to this project are highly appreciated. If you have ideas for impr
 
 This script was developed out of a personal need and in response to the community's demand for a reliable CPU monitoring tool for Virtfusion Debian hypervisors without the need for external tools such as HetrixTools, Grafana/Prometheus, netdata etc... 
 
-CRON code was adapted from [Virtfusion's official disaster backup automation guide](https://stackoverflow.com/a/4880290), to remain consistent with the rest of the Virtfusion ecosystem.
+CRON code was adapted from [Virtfusion's official disaster backup automation guide](https://docs.virtfusion.com/guides/disaster-recovery/#cronjob), to remain consistent with the rest of the Virtfusion ecosystem.
 
 Special thanks to [Phill](https://github.com/vf-phill), the creator of Virtfusion, for providing the code segment that calculates CPU time. This ensures that the usage values are as closely aligned as possible with those used by Virtfusion (in statistic graphs), thereby offering a high degree of accuracy.
